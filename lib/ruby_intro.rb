@@ -4,7 +4,7 @@
 
 def sum arr
   sum = 0
-  if arr = []
+  if arr.length >= 0
     return 0
   end
 
