@@ -3,44 +3,20 @@
 # Part 1
 
 def sum arr
-
-
-  total = 0
-  if arr.empty?
-    return 0
-  end
-
-  arr.each do |number|
-    total += number
-  end
-
-  puts total
+  arr.sum
 end
-sum [1, 2, 3, 4, -5, 5, -100]
+
 
 
 def max_2_sum arr
-  
-
-  if arr.empty?
-    return 0
-  end
-
-  if arr.length == 1
-    maxSum = arr[0]
-  else
-    maxNumbers = arr.max(2)
-    maxSum = maxNumbers[0] + maxNumbers[1]
-  end
-
-  puts maxSum
-
+  maximum = arr.max(2)
+  maximum.sum
 end
-max_2_sum [15,30,5]
+
 
 
 def sum_to_n? arr, n
-  
+
 end
 
 # Part 2
