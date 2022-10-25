@@ -3,7 +3,17 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+  sum = 0
+  if arr = []
+    return 0
+  end
+
+  for i in arr
+    sum+=i
+  end
+
+  return sum
+
 end
 
 def max_2_sum arr
