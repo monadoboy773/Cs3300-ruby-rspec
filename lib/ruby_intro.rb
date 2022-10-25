@@ -3,21 +3,35 @@
 # Part 1
 
 def sum arr
-  sum = 0
-  if arr.length >= 0
+
+
+  total = 0
+  if arr.empty?
     return 0
   end
 
-  for i in arr
-    sum+=i
+  arr.each do |number|
+    total += number
   end
 
-  return sum
-
+  puts total
 end
+sum [5,4,3,4,4]
+
 
 def max_2_sum arr
-  # YOUR CODE HERE
+  
+  total = 0
+  if arr.empty?
+    return 0
+  end
+
+  arr.each do |number|
+    total += number
+  end
+
+  puts total
+
 end
 
 def sum_to_n? arr, n
