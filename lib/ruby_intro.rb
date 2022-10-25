@@ -16,26 +16,31 @@ def sum arr
 
   puts total
 end
-sum [5,4,3,4,4]
+sum [1, 2, 3, 4, -5, 5, -100]
 
 
 def max_2_sum arr
   
-  total = 0
+
   if arr.empty?
     return 0
   end
 
-  arr.each do |number|
-    total += number
+  if arr.length == 1
+    maxSum = arr[0]
+  else
+    maxNumbers = arr.max(2)
+    maxSum = maxNumbers[0] + maxNumbers[1]
   end
 
-  puts total
+  puts maxSum
 
 end
+max_2_sum [15,30,5]
+
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  
 end
 
 # Part 2
