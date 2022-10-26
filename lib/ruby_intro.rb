@@ -39,11 +39,10 @@ end
 
 class BookInStock
 
-
   
 
   def constructor(isbn, price)
-    if isbn = "" then 
+    if isbn == "" then 
       raise ArgumentError.new("No ISBN entered") 
     elsif price <= 0 then 
       raise ArgumentError.new("Invalid price") 
@@ -51,6 +50,15 @@ class BookInStock
       @bookIsbn = isbn
       @bookPrice = price
     end
+  end
+
+  
+
+  def price_as_string
+    sprintf('%.2f', @bookIsbn)
+    priceString = priceRound.to_s
+    "$" << priceString
+
   end
 
     
