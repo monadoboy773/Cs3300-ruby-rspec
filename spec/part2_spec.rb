@@ -17,26 +17,26 @@ describe 'Ruby intro part 2' do
   end
   
   describe '#starts_with_consonant?' do
-    it 'should be defined' do
+    it 'should be defined' do # Test case that should be defined and not raise an error
       expect { starts_with_consonant?('d') }.not_to raise_error#::NoMethodError)
     end
-    it 'classifies true cases [1 point]' , points: 1 do
-      expect(starts_with_consonant?('v')).to be_truthy, "'v' is a consonant"
+    it 'classifies true cases [1 point]' , points: 1 do # Test cases that are expected to be true
+      expect(starts_with_consonant?('v')).to be_truthy, "'v' is a consonant" # The code expects v to be a consonant, which should return true
       %w[v vest Veeee crypt].each do |string|
-        expect(starts_with_consonant?(string)).to be_truthy, "Incorrect results for input: \"#{string}\""
+        expect(starts_with_consonant?(string)).to be_truthy, "Incorrect results for input: \"#{string}\"" # The code expects the first letter of the string to be a consonant
       end
     end
-    it 'classifies false cases [1 point]' , points: 1 do
-      expect(starts_with_consonant?('a')).to be_falsy, "'a' is not a consonant"
+    it 'classifies false cases [1 point]' , points: 1 do # Test cases that are expected to be false
+      expect(starts_with_consonant?('a')).to be_falsy, "'a' is not a consonant" # Expect a to be false since it is not a consonant
       %w[asdfgh Unix].each do |string|
-        expect(starts_with_consonant?(string)).to be_falsy, "Incorrect results for input: \"#{string}\""
+        expect(starts_with_consonant?(string)).to be_falsy, "Incorrect results for input: \"#{string}\""# Expects the first letter of the string to be false since it is not a consonant
       end
     end
     it 'works on the empty string [0.5 points]' , points: 0.5 do
-      expect(starts_with_consonant?('')).to be_falsy
+      expect(starts_with_consonant?('')).to be_falsy # Expects false since string is empty
     end
     it 'works on nonletters [0.5 points]' , points: 0.5 do
-      expect(starts_with_consonant?('#foo')).to be_falsy
+      expect(starts_with_consonant?('#foo')).to be_falsy # Expects false since the first element is a number
     end
   end
   

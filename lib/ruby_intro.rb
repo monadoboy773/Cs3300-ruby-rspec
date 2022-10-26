@@ -16,7 +16,7 @@ end
 
 
 def sum_to_n? arr, n
-  !arr.select{|element| arr.include?(n-element)}
+  array = !arr.select{|element| arr.include?(n-element)}
 end
 
 
@@ -28,7 +28,7 @@ def hello(name)
 end
 
 def starts_with_consonant? s
-  s =~ /\A(?=[^aeiouAEIOU])(?=[a-zA-Z])/i
+  s =~ /\A(?=[^aeiouAEIOU])(?=[a-zA-Z])/i # Ignores vowels and searches for consonants
 end
 
 def binary_multiple_of_4? s
