@@ -32,11 +32,29 @@ def starts_with_consonant? s
 end
 
 def binary_multiple_of_4? s
-
+  
 end
 
 # Part 3
 
 class BookInStock
-# YOUR CODE HERE
+
+
+  
+
+  def constructor(isbn, price)
+    if isbn = "" then 
+      raise ArgumentError.new("No ISBN entered") 
+    elsif price <= 0 then 
+      raise ArgumentError.new("Invalid price") 
+    else
+      @bookIsbn = isbn
+      @bookPrice = price
+    end
+  end
+
+    
+
+
+
 end
