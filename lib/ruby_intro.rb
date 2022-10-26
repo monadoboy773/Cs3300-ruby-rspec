@@ -28,11 +28,11 @@ def hello(name)
 end
 
 def starts_with_consonant? s
-  
+  s =~ /\A(?=[^aeiouAEIOU])(?=[a-zA-Z])/i
 end
 
 def binary_multiple_of_4? s
-  # YOUR CODE HERE
+
 end
 
 # Part 3
